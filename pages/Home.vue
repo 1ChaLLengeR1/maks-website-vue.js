@@ -40,8 +40,6 @@ export default {
       item_language.english = newVal[1].information;
     });
 
-    // halo
-
     return { item_language, loadAboutMe };
   },
 };
