@@ -13,13 +13,13 @@
 <script>
 import { useRoute } from "vue-router";
 import { useStore } from "vuex";
-import { computed, reactive } from "vue";
+import { computed, reactive, watch } from "vue";
 import TitleDescription from "../components/SinglePost/TitleDescription.vue";
 import BoxImage from "../components/SinglePost/BoxImages.vue";
 export default {
   components: {
     "title-description": TitleDescription,
-    'box-images': BoxImage
+    "box-images": BoxImage,
   },
   setup() {
     //values
@@ -35,17 +35,19 @@ export default {
 
     //functions
     store.dispatch("adminPanel/loadSingleProject", router.params.id);
-    setTimeout(() => {
-      item_project.id = loadSinglePoroject.value.id;
-      item_project.name = loadSinglePoroject.value.name;
-      item_project.description = loadSinglePoroject.value.description;
-      item_project.numeric = loadSinglePoroject.value.numeric;
-      item_project.images_project = loadSinglePoroject.value.images_project;
-    }, 200);
 
     //computed
     const loadSinglePoroject = computed(() => {
       return store.getters["adminPanel/loadSingleProject"];
+    });
+
+    //watachers
+    watch(loadSinglePoroject, (newVal) => {
+      item_project.id = newVal.id;
+      item_project.name = newVal.name;
+      item_project.description = newVal.description;
+      item_project.numeric = newVal.numeric;
+      item_project.images_project = newVal.images_project;
     });
 
     return { item_project, loadSinglePoroject };
