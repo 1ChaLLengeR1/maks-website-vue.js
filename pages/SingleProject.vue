@@ -41,7 +41,7 @@ export default {
       return store.getters["adminPanel/loadSingleProject"];
     });
 
-    //watachers
+    //watacherss
     watch(loadSinglePoroject, (newVal) => {
       item_project.id = newVal.id;
       item_project.name = newVal.name;
