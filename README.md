@@ -1,8 +1,48 @@
-# Website
+# EN
+# Graphics Portfolio Page - Vue.js
+### This was my second fullstack project based on Vue.js and Node.js.
 
-### Drugi projekt: Strona Portfolio kolegi
+### Second project: Graphics Portfolio
+<img align="left" alt="photo" src="https://github.com/1ChaLLengeR1/1ChaLLengeR1/blob/main/images/maksaStrona.png" /> 
 
-<img align="left" alt="photo" src="https://server.arturscibor.pl/file/imagesproject/0.4310781511819268-firstPhoto-image_project_maks.png" />
+- link to the page: https://projekt2.strona.arturscibor.pl/aboutU
+- similar information: https://arturscibor.pl/projects/project/f6ece8b2-c4f5-4802-9535-b66ea10b2a35
 
-- Link do strony: https://projekt1.strona.arturscibor.pl/
-- Więcej informacji znajduję się: https://arturscibor.pl/projects/project/7ce969b3-4217-4646-b4b0-6e9fceb0a7e0
+# Project idea:
+###### The project was conceived with the idea of creating something new for someone and adding another project to my portfolio. I designed the entire site independently in Figma. Unfortunately, I didn't save the project, which was my mistake. I believe it is one of the most visually appealing projects in my portfolio.
+
+# Technologies:
+### Frontend:
+- Figma
+- Vue.js
+- Vuex
+- Vue Router
+- Quasar Framework
+- CSS/SCSS
+### Backend
+- Node.js
+- Express.js
+- JWT
+- Postgresql 14
+### DevOps
+- Nginx
+- My VPS for hosting -> hosting: ovh.pl
+- Linux
+
+## Conclusion
+##### In retrospect, the project was very simple, but it was complete enough to allow me to create websites with a full user panel + CRUD + Photos.
+# Installation Frontend
+```bash
+    git clone https://github.com/1ChaLLengeR1/construction-website-vue.js.git
+    cd construction-website-vue.js
+    npm install
+    npm run serve
+```
+# Installation Backend
+```bash
+    git clone https://github.com/1ChaLLengeR1/construction-server-node.js.git
+    cd construction-server-node.js
+    npm install
+    nodemon app.js
+```
+---
