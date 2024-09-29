@@ -123,15 +123,18 @@ export default {
       formData.append("description", item_add.description);
       formData.append("numeric", item_add.numeric);
       formData.append("random_number", Math.random());
+
       formData.append("image_project", item_add.image_project);
       for (const key of item_add.image_project) {
         formData.append("image_project", key);
       }
+
       for (const key of item_add.images) {
         formData.append("images", key);
       }
 
-      const url = "https://projekt1.server.arturscibor.pl/routers/projects/add_project";
+      const url =
+        "https://projekt1.server.arturscibor.pl/routers/projects/add_project";
       const method = "POST";
       const headers = {
         authorization: `Bearer ${store.getters["options/saveTokens"].accesToken}`,
